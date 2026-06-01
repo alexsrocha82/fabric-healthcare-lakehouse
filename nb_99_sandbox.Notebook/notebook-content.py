@@ -22,6 +22,17 @@
 
 # CELL ********************
 
+from pyspark.sql.functions import col, lit, when, sum, min, max 
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
 # See all tables available
 display(spark.sql("SHOW TABLES"))
 
@@ -48,6 +59,38 @@ display(
 # CELL ********************
 
 spark.read.table("bronze_departments").printSchema()
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+display(
+    spark.read.table('silver_encounters')
+    .limit(3)
+)
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+display(
+    spark.table("gold_dim_patient")
+    .where(
+        #col('is_current') == False
+        col('patient_id') == 'PAT000004'
+    )
+    #.limit(2)
+    )
 
 # METADATA ********************
 
