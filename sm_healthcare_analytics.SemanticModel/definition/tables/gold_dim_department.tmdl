@@ -1,0 +1,57 @@
+table gold_dim_department
+	lineageTag: ef9b5f48-3b57-4d66-936c-e9d6d288a936
+	sourceLineageTag: [dbo].[gold_dim_department]
+
+	column department_id
+		dataType: string
+		lineageTag: e6b35542-d496-4581-bea5-420aa077177b
+		sourceLineageTag: department_id
+		summarizeBy: none
+		sourceColumn: department_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column department_name
+		dataType: string
+		lineageTag: 6dbe3d9d-e5bd-4f12-9925-22ae9d1d0db6
+		sourceLineageTag: department_name
+		summarizeBy: none
+		sourceColumn: department_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column clinic_location
+		dataType: string
+		lineageTag: c938495b-997f-4653-867f-5a75dd1a0e22
+		sourceLineageTag: clinic_location
+		summarizeBy: none
+		sourceColumn: clinic_location
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 0228c42b-fddb-4e76-a2e8-b456e439afc6
+		sourceLineageTag: region
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_active
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: eeaef57e-5ff8-40cf-abdd-95d20061d9dd
+		sourceLineageTag: is_active
+		summarizeBy: none
+		sourceColumn: is_active
+
+		annotation SummarizationSetBy = Automatic
+
+	partition gold_dim_department = entity
+		mode: directLake
+		source
+			entityName: gold_dim_department
+			schemaName: dbo
+			expressionSource: 'DirectLake - lh_healthcare'
+

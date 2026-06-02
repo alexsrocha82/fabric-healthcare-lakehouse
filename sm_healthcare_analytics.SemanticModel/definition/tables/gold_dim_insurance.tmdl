@@ -1,0 +1,39 @@
+table gold_dim_insurance
+	lineageTag: 5e56fbd5-97cf-49bb-9d09-5f1ec44c3522
+	sourceLineageTag: [dbo].[gold_dim_insurance]
+
+	column insurance_id
+		dataType: string
+		lineageTag: cf0a3734-d530-4b82-bf06-3815b68e9b45
+		sourceLineageTag: insurance_id
+		summarizeBy: none
+		sourceColumn: insurance_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column insurance_name
+		dataType: string
+		lineageTag: f3bced1f-95cb-4f4e-b34d-c7d60dd70d84
+		sourceLineageTag: insurance_name
+		summarizeBy: none
+		sourceColumn: insurance_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_active
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c53907ee-d17b-4017-a757-b5186f441c13
+		sourceLineageTag: is_active
+		summarizeBy: none
+		sourceColumn: is_active
+
+		annotation SummarizationSetBy = Automatic
+
+	partition gold_dim_insurance = entity
+		mode: directLake
+		source
+			entityName: gold_dim_insurance
+			schemaName: dbo
+			expressionSource: 'DirectLake - lh_healthcare'
+

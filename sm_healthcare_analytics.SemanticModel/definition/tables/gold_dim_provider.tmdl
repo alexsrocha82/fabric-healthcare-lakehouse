@@ -1,0 +1,116 @@
+table gold_dim_provider
+	lineageTag: e94761ef-1dc4-4101-bcb9-67b394a74042
+	sourceLineageTag: [dbo].[gold_dim_provider]
+
+	column provider_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 8d3d7a8a-6172-4053-b56f-1eabbf155d4c
+		sourceLineageTag: provider_key
+		summarizeBy: none
+		sourceColumn: provider_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_id
+		dataType: string
+		lineageTag: ef406ffc-d9b6-4446-815e-58f4b38a0349
+		sourceLineageTag: provider_id
+		summarizeBy: none
+		sourceColumn: provider_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column full_name
+		dataType: string
+		lineageTag: a762e211-500c-4803-9894-6c49eaa9a6b5
+		sourceLineageTag: full_name
+		summarizeBy: none
+		sourceColumn: full_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column specialty
+		dataType: string
+		lineageTag: 04ae09e7-5ea6-4ee2-a6fb-6f38d174e8a1
+		sourceLineageTag: specialty
+		summarizeBy: none
+		sourceColumn: specialty
+
+		annotation SummarizationSetBy = Automatic
+
+	column department_id
+		dataType: string
+		lineageTag: 10e55926-2fcb-4aa7-baf0-0664fc8eb0dc
+		sourceLineageTag: department_id
+		summarizeBy: none
+		sourceColumn: department_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column license_number
+		dataType: string
+		lineageTag: 8a316fa9-d2d2-463b-860d-3b836fbfb4e4
+		sourceLineageTag: license_number
+		summarizeBy: none
+		sourceColumn: license_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column hire_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 16a2d316-b4a5-4981-9325-71b51a5fd122
+		sourceLineageTag: hire_date
+		summarizeBy: none
+		sourceColumn: hire_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_active
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c9d69aa2-74f9-4e5b-969f-7ba6ca5bff91
+		sourceLineageTag: is_active
+		summarizeBy: none
+		sourceColumn: is_active
+
+		annotation SummarizationSetBy = Automatic
+
+	column effective_start
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4346f7b5-4279-4b18-af06-386cd75e1e5b
+		sourceLineageTag: effective_start
+		summarizeBy: none
+		sourceColumn: effective_start
+
+		annotation SummarizationSetBy = Automatic
+
+	column effective_end
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 44e50923-2267-4f49-82df-080dc37ad2b6
+		sourceLineageTag: effective_end
+		summarizeBy: none
+		sourceColumn: effective_end
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_current
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: dda20312-5698-450b-917a-75cd7d191c8b
+		sourceLineageTag: is_current
+		summarizeBy: none
+		sourceColumn: is_current
+
+		annotation SummarizationSetBy = Automatic
+
+	partition gold_dim_provider = entity
+		mode: directLake
+		source
+			entityName: gold_dim_provider
+			schemaName: dbo
+			expressionSource: 'DirectLake - lh_healthcare'
+

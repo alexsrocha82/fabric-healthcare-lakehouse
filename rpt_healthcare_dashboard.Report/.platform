@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "rpt_healthcare_dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e2801dc7-e1df-b7c1-4c43-6b2edccd86bc"
+  }
+}

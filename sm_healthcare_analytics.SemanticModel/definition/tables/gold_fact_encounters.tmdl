@@ -1,0 +1,173 @@
+table gold_fact_encounters
+	lineageTag: 05745d1f-675e-498c-a896-80432d1eed73
+	sourceLineageTag: [dbo].[gold_fact_encounters]
+
+	column date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ba4da74-ea96-491e-98cd-a8e2a8395779
+		sourceLineageTag: date_key
+		summarizeBy: none
+		sourceColumn: date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 6e81e53f-025c-4c67-8d92-ebafa72dc956
+		sourceLineageTag: patient_key
+		summarizeBy: none
+		sourceColumn: patient_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f384892-e05e-44dc-9295-08a1321d31be
+		sourceLineageTag: provider_key
+		summarizeBy: none
+		sourceColumn: provider_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column department_id
+		dataType: string
+		lineageTag: faca7453-49f8-4b05-a8a0-5ce80aae5461
+		sourceLineageTag: department_id
+		summarizeBy: none
+		sourceColumn: department_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column insurance_plan
+		dataType: string
+		lineageTag: 7c44b2f5-2c36-4351-95ba-bce3e4cd4255
+		sourceLineageTag: insurance_plan
+		summarizeBy: none
+		sourceColumn: insurance_plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column encounter_id
+		dataType: string
+		lineageTag: 800da412-bcfa-4b8c-9673-08564a38cbde
+		sourceLineageTag: encounter_id
+		summarizeBy: none
+		sourceColumn: encounter_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_id
+		dataType: string
+		lineageTag: fce21598-8691-41e4-9ead-70407442bf3d
+		sourceLineageTag: patient_id
+		summarizeBy: none
+		sourceColumn: patient_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_id
+		dataType: string
+		lineageTag: 7ac6ad9a-bc9b-4be4-a035-bcfba6db7bc0
+		sourceLineageTag: provider_id
+		summarizeBy: none
+		sourceColumn: provider_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column encounter_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 66c8f7e1-05e3-4d8f-8db8-a84d186a93cc
+		sourceLineageTag: encounter_date
+		summarizeBy: none
+		sourceColumn: encounter_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column encounter_type
+		dataType: string
+		lineageTag: 4c404c39-2f02-4234-9eb7-733c63d87501
+		sourceLineageTag: encounter_type
+		summarizeBy: none
+		sourceColumn: encounter_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 2c58dfdf-908d-49a3-b671-2c1874d2f40a
+		sourceLineageTag: status
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column diagnosis_code
+		dataType: string
+		lineageTag: 60dc1426-491a-4484-82c3-433e9f2783bb
+		sourceLineageTag: diagnosis_code
+		summarizeBy: none
+		sourceColumn: diagnosis_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column diagnosis_desc
+		dataType: string
+		lineageTag: bc2f8ab3-2631-4f6a-bc5c-52b6e59bbd57
+		sourceLineageTag: diagnosis_desc
+		summarizeBy: none
+		sourceColumn: diagnosis_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column procedure_code
+		dataType: string
+		lineageTag: 364e0801-5980-4b04-b458-ec79f98df25d
+		sourceLineageTag: procedure_code
+		summarizeBy: none
+		sourceColumn: procedure_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_amount
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: dcb6ea0a-0c19-4088-8f4c-56a4dcde4a50
+		sourceLineageTag: total_amount
+		summarizeBy: sum
+		sourceColumn: total_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column source_created_at
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b7b4a99c-8791-48b6-9605-a9de5b884bf4
+		sourceLineageTag: source_created_at
+		summarizeBy: none
+		sourceColumn: source_created_at
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_updated_at
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 99c387db-93be-41cd-98da-b97a23a94bf4
+		sourceLineageTag: source_updated_at
+		summarizeBy: none
+		sourceColumn: source_updated_at
+
+		annotation SummarizationSetBy = Automatic
+
+	partition gold_fact_encounters = entity
+		mode: directLake
+		source
+			entityName: gold_fact_encounters
+			schemaName: dbo
+			expressionSource: 'DirectLake - lh_healthcare'
+

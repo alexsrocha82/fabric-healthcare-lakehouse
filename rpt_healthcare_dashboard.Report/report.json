@@ -1,0 +1,73 @@
+{
+  "config": "{\"version\":\"5.73\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY26SU05\",\"version\":{\"visual\":\"2.9.0\",\"report\":\"3.3.0\",\"page\":\"2.3.1\"},\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY26SU05",
+            "path": "BaseThemes/CY26SU05.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c7116afdc19929309dd3",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4ca922c66ebe029ea6aa\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.428341384863122,\"y\":13.74127750939345,\"z\":0,\"width\":280.3220611916264,\"height\":346.280193236715,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Min(gold_fact_encounters.encounter_id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"gold_fact_encounters\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"encounter_id\"}},\"Function\":5},\"Name\":\"Min(gold_fact_encounters.encounter_id)\",\"NativeReferenceName\":\"Count of encounter_id\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"encounter_id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"shapeCustomRectangle\":[{\"properties\":{\"rectangleRoundedCurveCustomStyle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}}},\"selector\":{\"id\":\"default\"}}],\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}],\"cardCalloutArea\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"backgroundFillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"layout\":[{\"properties\":{\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"autoGrid\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"backgroundShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"backgroundFillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}},\"selector\":{\"id\":\"default\"}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"fillCustom\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Min(gold_fact_encounters.encounter_id)\"}}],\"divider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingIndividual\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Min(gold_fact_encounters.encounter_id)\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 346.28,
+          "queryBinary": "H4sIAAAAAAAEAG1RwUrEMBD9lWVOCkV2BS+9ae16kJXVihdZSkin3UiTlGkiW0r/3UlaVoW9zct7b95jMkJmtRam6iH9HKFAnp2Srx5peBROFEfR4SKBdIRIhOEDqVfWQHqbwJasjvYXoRFSaCCBnNe4IQDbVmUtpCvRSOuNYyPz70PH0vV0SDi0RenigvumIWyEi5tHyE8dYd8vKLOt1xfeC+tJ4hvWvyCWmKYE9mQ7pFjkHF+qKnJbb+ScdMdo6b5T5upS5Zu/9msIeqe+QyoSU7jYs6BZ2Xr1P+3AAQ/KVMo0oeSelBbzHZ/I+o6f5/tz3S+MpQJeH6LxfOoNg/yE0gfBDh0p2T+r8DGbiZU/WpymUcwBAAA=",
+          "width": 280.32,
+          "x": 14.43,
+          "y": 13.74,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9e7c49620cd87037c9b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.428341384863122,\"y\":373.76274825550183,\"z\":2,\"width\":738.593666129898,\"height\":334.60010735373055,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"gold_dim_date.full_date\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(gold_fact_encounters.encounter_id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"gold_dim_date\",\"Type\":0},{\"Name\":\"g1\",\"Entity\":\"gold_fact_encounters\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"full_date\"},\"Name\":\"gold_dim_date.full_date\",\"NativeReferenceName\":\"full_date\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g1\"}},\"Property\":\"encounter_id\"}},\"Function\":5},\"Name\":\"CountNonNull(gold_fact_encounters.encounter_id)\",\"NativeReferenceName\":\"encounter_id\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"full_date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 334.60,
+          "queryBinary": "H4sIAAAAAAAEAJWSwU7DMAyG3yUnkKppRXDpDcbGAZjGhnZBUxUlXglqkipN0Kaq746dbmuBceAWx7/9f7bcsInVmhtZs+ytYSvAt1fiJYDb33PPV++8goOEZQ2LCXqswdXKGpZdJWzmrI7lc66BZaxgCZtiG7+nwJYyl0rnknvAxOu+Qs24TXp5+ku/5cLnYIQNxqPRoGyTIGQJwkfDiS2DNsQz3VUO6g4J57DBCVjCtg8iV9smbOFsBS56bUNZdlz4f6QZ8o56BQm8+qSm4BANDvphj4bdFoWDAoX2DNU/adOfuKeF5ErG3CwY0Vnd9ANMSDO3Zo5gF+e2ORr2ufxzsO9uGzS4U0YqUxDlwinNu0t4cDZU+N1dEOJ+QISieJykm1hKt7QEGcRxM/Sxpn2g1XUy7IcuBuSTMrDiuiox37Q07OniUgymOxCBej2Dd0rUj4ruM23R7At331qw0wIAAA==",
+          "width": 738.59,
+          "x": 14.43,
+          "y": 373.76,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"c50124d35638049eb600\",\"layouts\":[{\"id\":0,\"position\":{\"x\":765.3891572732152,\"y\":373.76274825550183,\"z\":3,\"width\":502.2436929683306,\"height\":334.60010735373055,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(gold_fact_encounters.encounter_id)\"}],\"Category\":[{\"queryRef\":\"gold_fact_encounters.encounter_type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"gold_fact_encounters\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"encounter_id\"}},\"Function\":5},\"Name\":\"CountNonNull(gold_fact_encounters.encounter_id)\",\"NativeReferenceName\":\"encounter_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"encounter_type\"},\"Name\":\"gold_fact_encounters.encounter_type\",\"NativeReferenceName\":\"encounter_type\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"encounter_id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 334.60,
+          "queryBinary": "H4sIAAAAAAAEAMWTS0vDQBDHv8ueFBZpFS+52ZcHsda29CKlLJtpXEl2w2RXDCHf3ZlN7AOEXgRP2Xn958fMpBFjVxTKppVI3hqxAnp7o18DYD1RXq3eVQl9ikgaEQP82ABWxlmR3EoxQ1fE8rkqQCQiE1JMScbXbLg83e2V9juw2gXrqZDi67qk1EG7ldQ0B+2jwEOWIWTKR+VGTL9KhKrqrbHLQ/GLf+UCaljC/mhEiLaVYoGuBIwgh/Y7k8bYLFjddbonq2cfc87c2XnI86vf2G9Oda4FF3rzye0BKQS9znk3+Yf0nid3BL7AGLMvQ3aitIwXTAFHddzGxCD0E6Itn2P/26badkuekbGpsRnrLNAUqjvKR3ShJHd3zKT40fGzPZDDbSzls15CGvQPOzs2TEwwd/JUb+1K+rSMcLj3YcujAB24/Bk8Gl09Gf47hoz2Dcf8o1FRAwAA",
+          "width": 502.24,
+          "x": 765.39,
+          "y": 373.76,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"cb8b4b39b95bd05a10bd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":307.11755233494364,\"y\":13.74127750939345,\"z\":1,\"width\":960.5152979066022,\"height\":346.280193236715,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(gold_fact_encounters.encounter_id)\"}],\"Category\":[{\"queryRef\":\"gold_dim_department.region\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g1\",\"Entity\":\"gold_fact_encounters\",\"Type\":0},{\"Name\":\"g\",\"Entity\":\"gold_dim_department\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g1\"}},\"Property\":\"encounter_id\"}},\"Function\":5},\"Name\":\"CountNonNull(gold_fact_encounters.encounter_id)\",\"NativeReferenceName\":\"encounter_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"region\"},\"Name\":\"gold_dim_department.region\",\"NativeReferenceName\":\"Count of region\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g1\"}},\"Property\":\"encounter_id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 346.28,
+          "queryBinary": "H4sIAAAAAAAEAMWTS0/DMAzHvwrKCaRoahFcemMvDogxNjQOaKqi1CtBTVKlCVBV/e44afeCceDErX787Z9dpyEjLSVTWUWSl4YsAb+t4I8OTD1mli1fWQl9CkkaEgL+YwWmElqR5JKSqdEyyGdMAklIHhNKJljH1t7SRZZuGLcpKK6dsqjE+FNdYm7U0r3shyoTMs2gZMZKUPZAtKaIWgC3oe1NnhvImQ08DZl8lgaqqrdGunDyhH+pneGwgM3e6NDblpK50SWYALKDTkUWYlOneNfqGq2efeRzZlrNXFGcn5p4cFjngnihFe++PxgMQV/nuBv9M/53etyLF+xBT+x10Cf9xhRmO9Obs20x3P6DycAM67D+sTDQbwSP4Rjz/35N267RMxQqEyr3heZGSNYd763RrkR3d/RY8a0bwNsRjddB6s9/AZnjW3jvWHlkpLmih/WesYv+6EZCIJLEURS1nmj3TOLWrwa489XuwRrBqzvhH1XsSb8AQXIan4gDAAA=",
+          "width": 960.52,
+          "x": 307.12,
+          "y": 13.74,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

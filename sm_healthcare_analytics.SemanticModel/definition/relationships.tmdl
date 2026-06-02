@@ -1,0 +1,20 @@
+relationship dcc63d59-6383-f0d8-161c-df058d95fec4
+	fromColumn: gold_fact_encounters.date_key
+	toColumn: gold_dim_date.date_key
+
+relationship 8ad40aed-3614-3e05-9ca3-ac730465dc43
+	fromColumn: gold_fact_encounters.patient_key
+	toColumn: gold_dim_patient.patient_key
+
+relationship 248ce00d-2d76-e10c-f598-851a11db78d2
+	fromColumn: gold_fact_encounters.provider_key
+	toColumn: gold_dim_provider.provider_key
+
+relationship 48f23d80-7f24-479b-3e22-ec99b69a45f3
+	fromColumn: gold_fact_encounters.department_id
+	toColumn: gold_dim_department.department_id
+
+relationship 5d8a855b-632e-51c7-7960-3ea899c275b7
+	fromColumn: gold_fact_encounters.insurance_plan
+	toColumn: gold_dim_insurance.insurance_name
+
