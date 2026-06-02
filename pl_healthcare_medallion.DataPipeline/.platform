@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "pl_healthcare_medallion"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "047cd065-fc90-b8ac-42ca-7528d235b263"
+  }
+}
