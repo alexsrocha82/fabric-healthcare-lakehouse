@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name": "gold_dim_patient_1",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/gold_dim_patient",
+        "itemId": "8ed911ce-adf5-4442-ba67-5ed2d1db4fa8",
+        "workspaceId": "d70b1745-86b1-4c92-ba89-8fb8e50242cd"
+      }
+    }
+  }
+]

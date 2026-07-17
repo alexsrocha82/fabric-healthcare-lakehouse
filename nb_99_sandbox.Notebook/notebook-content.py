@@ -33,6 +33,20 @@ from pyspark.sql.functions import col, lit, when, sum, min, max
 
 # CELL ********************
 
+display(
+    spark.read.table('gold_dim_patient_1')
+    .limit(2)
+)
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
 # See all tables available
 display(spark.sql("SHOW TABLES"))
 
